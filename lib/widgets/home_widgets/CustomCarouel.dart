@@ -34,7 +34,7 @@ class CustomCarouel extends StatelessWidget {
                       context,
                       SafeWebView(
                           url:
-                              "https://gulfnews.com/world/asia/pakistan/womens-day-10-pakistani-women-inspiring-the-country-1.77696239"));
+                              "https://timesofindia.indiatimes.com/travel/travel-news/delhi-to-have-women-only-parks-where-men-will-not-be-allowed/articleshow/100250630.cms"));
                 } else if (index == 1) {
                   navigateToRoute(
                       context,

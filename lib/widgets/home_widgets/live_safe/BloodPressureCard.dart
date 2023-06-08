@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
-class PharmacyCard extends StatelessWidget {
+import '../../../BloodPressureScreen.dart';
+
+class BloodPressureCard extends StatelessWidget {
   final Function? onMapFunction;
 
-  const PharmacyCard({Key? key, this.onMapFunction}) : super(key: key);
+  const BloodPressureCard({Key? key, this.onMapFunction}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,8 +14,14 @@ class PharmacyCard extends StatelessWidget {
       child: Column(
         children: [
           InkWell(
+
             onTap: () {
-              onMapFunction!('pharmacies near me with distance');
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CountdownScreen(),
+                ),
+              );
             },
             child: Card(
               elevation: 3,
@@ -25,14 +33,14 @@ class PharmacyCard extends StatelessWidget {
                 width: 50,
                 child: Center(
                   child: Image.asset(
-                    'assets/pharmacy.png',
+                    'assets/icons8-blood-pressure-64.png',
                     height: 32,
                   ),
                 ),
               ),
             ),
           ),
-          Text('Pharmacy')
+          Text('Blood Pressure')
         ],
       ),
     );

@@ -13,7 +13,7 @@ class BusStationCard extends StatelessWidget {
         children: [
           InkWell(
             onTap: () {
-              onMapFunction!('bus stops near me');
+              onMapFunction!('bus stops near me with distance');
             },
             child: Card(
               elevation: 3,

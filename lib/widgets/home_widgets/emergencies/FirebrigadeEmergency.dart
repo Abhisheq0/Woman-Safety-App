@@ -16,7 +16,7 @@ class FirebrigadeEmergency extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
         ),
         child: InkWell(
-          onTap: () => _callNumber('16'),
+          onTap: () => _callNumber('101'),
           child: Container(
             height: 180,
             width: MediaQuery.of(context).size.width * 0.7,
@@ -55,7 +55,7 @@ class FirebrigadeEmergency extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'In case of fire emergency call',
+                          'Call 1-0-1 for Fire Brigade',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: MediaQuery.of(context).size.width * 0.045,
@@ -70,7 +70,7 @@ class FirebrigadeEmergency extends StatelessWidget {
                           ),
                           child: Center(
                             child: Text(
-                              '0 -1 -6',
+                              '1-0-1',
                               style: TextStyle(
                                 color: Colors.red[300],
                                 fontWeight: FontWeight.bold,
